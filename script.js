@@ -70,8 +70,10 @@ async function fetchProducts() {
             throw new Error("API'den doğru formatta ürünler alınamadı.");
         }
 
-        // İlk 10 ürünü al ve global değişkende sakla
-        displayedProducts = products.slice(0, 10);
+        displayedProducts = products
+            .filter((product) => product.buyPrice > 0)
+            .slice(0, 10);
+
         renderProducts(displayedProducts);
     } catch (error) {
         console.error('Ürünleri çekerken hata oluştu:', error);
