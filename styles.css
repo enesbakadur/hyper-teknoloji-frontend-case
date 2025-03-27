@@ -18,24 +18,4 @@ body {
         #06022d,
         #01000b
     ) !important;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.gradient-custom {
-    background: #03001e;
-    background: -webkit-linear-gradient(
-        to bottom right,
-        #01000b,
-        #06022d,
-        #06022d,
-        #01000b
-    ) !important;
-    background: linear-gradient(
-        to bottom right,
-        #01000b,
-        #06022d,
-        #06022d,
-        #01000b
-    ) !important;
 }
